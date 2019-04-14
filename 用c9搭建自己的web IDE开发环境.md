@@ -13,21 +13,21 @@ tags:
 
 这种方式安装是最简单的，而且是全功能的c9版本，而且可以免费使用aws云服务器，但是aws在国内没有数据中心，速度有点慢，如果你不在意，可以用这种方式。
 * **第一步** 注册aws账号，绑定信用卡
-![注册界面](http://bulldog.qiniudn.com/aws_signup.png)
+![注册界面](images/aws_signup.png)
 
 * **第二步:部署cloud9(c9)** 打开管理面板部署cloud9
-![部署cloud9](http://bulldog.qiniudn.com/cloud9open.png)
+![部署cloud9](images/cloud9open.png)
 
-![step1](http://bulldog.qiniudn.com/c9_create_step1.png)
+![step1](images/c9_create_step1.png)
 
-![step2](http://bulldog.qiniudn.com/c9_create_step2.png)
+![step2](images/c9_create_step2.png)
 记得选1cup1Gbmemory，这个是免费的，然后下一步，最好就弄完了。剩下的就是打开浏览器折腾吧。
 
 加载画面:
-![加载画面](http://bulldog.qiniudn.com/c9ide_loding1.png)
+![加载画面](images/c9ide_loding1.png)
 
 cloud9欢迎界面：
-![cloud9欢迎界面](http://bulldog.qiniudn.com/c9welcome.png)
+![cloud9欢迎界面](images/c9welcome.png)
 
 #### 方式二：自主云服务器安装
 
@@ -36,7 +36,7 @@ cloud9欢迎界面：
 ### **第一步（其实是N步）：** 
 * 打开[c9 github页面链接](https://github.com/c9/core),按照安装文档进行安装配置
 * 执行安装命令
-![安装文档图](http://bulldog.qiniudn.com/c9_install_cmd.png)
+![安装文档图](images/c9_install_cmd.png)
 **安装**
 ``` bash
 git clone https://github.com/c9/core.git c9sdk
@@ -74,6 +74,6 @@ ubuntu@VM-4-197-ubuntu:~$ node c9sdk/server.js -w ~/workspace --auth abc:123456
 ```
 说明一下c9启动后侦听的是127.0.0.1的ip，我设置--listen为外网ip好像无效，最后是用安装nginx反向代理来实现外网80端口访问的。
 
-![c9登陆](http://bulldog.qiniudn.com/c9_basic_auth.png)
+![c9登陆](images/c9_basic_auth.png)
 
 剩下的事情就是代码写的怎么样，和linux命令用的熟不熟的问题了

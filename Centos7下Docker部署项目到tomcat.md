@@ -32,8 +32,8 @@ service docker start
 * 可参考文章：[Docker 镜像加速器](https://yq.aliyun.com/articles/29941?spm=5176.10695662.1996646101.searchclickresult.696064a352OVFc)
 
 如图：
-![阿里云镜像](http://bulldog.qiniudn.com/docker7.png)
-![加速镜像](http://bulldog.qiniudn.com/docker1.png)
+![阿里云镜像](images/docker7.png)
+![加速镜像](images/docker1.png)
 
 * 配置加速镜像地址
 
@@ -54,21 +54,21 @@ sudo systemctl restart docker
 docker search tomcat
 ```
 如图:
-![](http://bulldog.qiniudn.com/docker2.png)
+![](images/docker2.png)
 
 * 下载start最多的tomcat镜像
 ``` bash
 docker pull  docker.io/tomcat
 ```
 如图：
-![](http://bulldog.qiniudn.com/docker3.png)
+![](images/docker3.png)
 
 * 查看已经下载到本地的镜像
 ``` bash
 docker images
 ```
 如图：
-![](http://bulldog.qiniudn.com/docker4.png)
+![](images/docker4.png)
 
 * 启动tomcat容器
 ``` bash
@@ -77,8 +77,8 @@ docker run -p 8080:8080 docker.io/tomcat
 若端口被占用，可以指定容器和主机的映射端口，前者是主机对外访问端口：后者是映射到容器内部的端口
 
 如图：
-![](http://bulldog.qiniudn.com/docker5.png)
+![](images/docker5.png)
 
 * 用浏览器访问主机对应地址和端口
 
-![](http://bulldog.qiniudn.com/docker8.png)
+![](images/docker8.png)
